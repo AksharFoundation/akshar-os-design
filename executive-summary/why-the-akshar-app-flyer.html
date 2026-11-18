@@ -279,6 +279,30 @@
       font-variant-numeric: tabular-nums;
     }
 
+    .usd {
+      display: block;
+      margin-top: 0.8mm;
+      font-size: 8pt;
+      font-weight: 600;
+      color: var(--teal);
+    }
+
+    .ask-box .usd {
+      margin-top: 1.5mm;
+      font-size: 10pt;
+      color: #d8d4cc;
+      font-weight: 600;
+    }
+
+    .ask-box.light .usd { color: var(--teal); }
+    .ask-box.accent .usd { color: #fde8dc; }
+
+    .rate {
+      font-size: 8pt;
+      color: var(--muted);
+      margin-top: 3mm;
+    }
+
     td.what {
       color: var(--slate);
       font-size: 8.5pt;
@@ -412,23 +436,23 @@
 
     <div class="body">
       <h1>What it <em>costs</em></h1>
-      <p class="budget-lede">The full cost to build and host the app for two years is ₹67 lakh. Because design and the core build are done in-house by Akshar’s senior architect, ₹30 lakh is absorbed by the in-house team. The remaining ₹37 lakh is this ask. The software will be open source, so other nonprofits can deploy and use it at no licence cost.</p>
+      <p class="budget-lede">The full cost to build and host the app for two years is ₹67 lakh (USD 71,700). Because design and the core build are done in-house by Akshar’s senior architect, ₹30 lakh (USD 32,100) is absorbed by the in-house team. The remaining ₹37 lakh (USD 39,600) is this ask. The software will be open source, so other nonprofits can deploy and use it at no licence cost.</p>
 
       <div class="ask-row">
         <div class="ask-box light">
           <p>Full cost · 2 years</p>
           <strong>₹67 lakh</strong>
-          <span>What the build actually costs</span>
+          <span class="usd">USD 71,700</span>
         </div>
         <div class="ask-box">
           <p>Absorbed in-house</p>
           <strong>₹30 lakh</strong>
-          <span>Design and core build, not billed</span>
+          <span class="usd">USD 32,100</span>
         </div>
         <div class="ask-box accent">
           <p>This ask</p>
           <strong>₹37 lakh</strong>
-          <span>About USD 42,000</span>
+          <span class="usd">USD 39,600</span>
         </div>
       </div>
 
@@ -443,35 +467,36 @@
         <tbody>
           <tr>
             <td>Product design</td>
-            <td class="num">₹4 lakh</td>
+            <td class="num">₹4 lakh<span class="usd">USD 4,300</span></td>
             <td class="what">Flows for parent, teacher, student, GSP, and Head Office</td>
           </tr>
           <tr>
             <td>Core build — phases 1 to 3</td>
-            <td class="num">₹16 lakh</td>
+            <td class="num">₹16 lakh<span class="usd">USD 17,100</span></td>
             <td class="what">Register, access, dashboards, L&amp;D, consent, parent notices, teacher routine, Kolibri link</td>
           </tr>
           <tr>
             <td>Later build — phases 4 and 5</td>
-            <td class="num">₹12 lakh</td>
+            <td class="num">₹12 lakh<span class="usd">USD 12,800</span></td>
             <td class="what">Class-photo attendance after consent; Head Office tools still architect-led</td>
           </tr>
           <tr>
             <td>India hosting and security</td>
-            <td class="num">₹5 lakh</td>
+            <td class="num">₹5 lakh<span class="usd">USD 5,400</span></td>
             <td class="what">Database, backups, monitoring for 2 years; India-based hosting preferred</td>
           </tr>
         </tbody>
         <tfoot>
           <tr>
             <td>This ask</td>
-            <td class="num">₹37 lakh</td>
+            <td class="num">₹37 lakh<span class="usd">USD 39,600</span></td>
             <td></td>
           </tr>
         </tfoot>
       </table>
 
-      <p class="note">The table is the ₹37 lakh ask: the portion not absorbed in-house, plus later-phase specialist help and two years of hosting. Full cost ₹67 lakh. ₹30 lakh absorbed by the in-house team. The resulting software is open source and available for other nonprofits to deploy.</p>
+      <p class="note">The table is the ₹37 lakh (USD 39,600) ask: the portion not absorbed in-house, plus later-phase specialist help and two years of hosting. Full cost ₹67 lakh (USD 71,700). ₹30 lakh (USD 32,100) absorbed by the in-house team. The resulting software is open source and available for other nonprofits to deploy.</p>
+      <p class="rate">USD figures use 1 USD = 93.42 INR, rounded to the nearest hundred.</p>
     </div>
   </article>
 </body>
