@@ -126,8 +126,8 @@
       border-bottom: 1px solid #ddd6c8;
     }
 
-    .point:nth-child(6),
-    .point:nth-child(7) {
+    .point:nth-child(7),
+    .point:nth-child(8) {
       border-bottom: none;
     }
 
@@ -150,12 +150,6 @@
       font-size: 8.6pt;
       line-height: 1.38;
       color: var(--slate);
-    }
-
-    .span2 {
-      grid-column: 1 / -1;
-      border-bottom: none;
-      padding-top: 1mm;
     }
 
     .views {
@@ -204,15 +198,15 @@
 
     .ask-row {
       display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 4mm;
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 3.5mm;
       margin-bottom: 7mm;
     }
 
     .ask-box {
       background: var(--navy);
       color: var(--white);
-      padding: 6mm 6.5mm;
+      padding: 5.5mm 5mm;
       border-radius: 2px;
     }
 
@@ -228,7 +222,7 @@
     .ask-box strong {
       display: block;
       font-family: "Cormorant Garamond", Georgia, serif;
-      font-size: 28pt;
+      font-size: 22pt;
       font-weight: 600;
       line-height: 1;
       color: var(--white);
@@ -249,6 +243,12 @@
     .ask-box.light p { color: var(--teal); }
     .ask-box.light strong { color: var(--teal); }
     .ask-box.light span { color: var(--slate); }
+
+    .ask-box.accent {
+      background: var(--orange);
+    }
+
+    .ask-box.accent p { color: #fde8dc; }
 
     table {
       width: 100%;
@@ -368,11 +368,18 @@
             <p>Twenty hours a year of L&amp;D sit apart from operations. An app can host materials, progress, and certificates next to the work.</p>
           </div>
         </section>
-        <section class="point span2">
+        <section class="point">
           <p class="num">07</p>
           <div>
             <h2>No single view across schools and geographies</h2>
             <p>Students, assessments, attendance, recycling, peer learning, and points are entered by district teams and merged by hand. An app is one dashboard from the same source — not Head Office as the database.</p>
+          </div>
+        </section>
+        <section class="point">
+          <p class="num">08</p>
+          <div>
+            <h2>Open source, not Akshar-only</h2>
+            <p>The app will be released as open source software. Any other nonprofit can deploy and use it at no licence cost. The code is not restricted to Akshar.</p>
           </div>
         </section>
       </div>
@@ -405,18 +412,23 @@
 
     <div class="body">
       <h1>What it <em>costs</em></h1>
-      <p class="budget-lede">Design and the core build (phases 1 to 3) are led in-house by Akshar’s senior architect, with one junior engineer at ₹10 lakh a year for two years. In-house design and core build are billed at 40% of market rate (60% off). The rest is Akshar’s contribution.</p>
+      <p class="budget-lede">The full cost to build and host the app for two years is ₹67 lakh. Because design and the core build are done in-house by Akshar’s senior architect, ₹30 lakh is absorbed by the in-house team. The remaining ₹37 lakh is this ask. The software will be open source, so other nonprofits can deploy and use it at no licence cost.</p>
 
       <div class="ask-row">
-        <div class="ask-box">
-          <p>This ask · 2 years</p>
-          <strong>₹62 lakh</strong>
-          <span>About USD 70,000</span>
-        </div>
         <div class="ask-box light">
-          <p>In-house contribution</p>
+          <p>Full cost · 2 years</p>
+          <strong>₹67 lakh</strong>
+          <span>What the build actually costs</span>
+        </div>
+        <div class="ask-box">
+          <p>Absorbed in-house</p>
           <strong>₹30 lakh</strong>
-          <span>Against a ₹92 lakh market cost</span>
+          <span>Design and core build, not billed</span>
+        </div>
+        <div class="ask-box accent">
+          <p>This ask</p>
+          <strong>₹37 lakh</strong>
+          <span>About USD 42,000</span>
         </div>
       </div>
 
@@ -424,54 +436,42 @@
         <thead>
           <tr>
             <th>Line</th>
-            <th class="num">Market</th>
-            <th class="num">This ask</th>
+            <th class="num">Amount</th>
             <th>What you get</th>
           </tr>
         </thead>
         <tbody>
           <tr>
             <td>Product design</td>
-            <td class="num">₹10 lakh</td>
             <td class="num">₹4 lakh</td>
-            <td class="what">Flows for parent, teacher, student, GSP, and Head Office — in-house at 60% off</td>
+            <td class="what">Flows for parent, teacher, student, GSP, and Head Office</td>
           </tr>
           <tr>
             <td>Core build — phases 1 to 3</td>
-            <td class="num">₹40 lakh</td>
             <td class="num">₹16 lakh</td>
-            <td class="what">Register, access, dashboards, L&amp;D, consent, parent notices, teacher routine, Kolibri link — in-house at 60% off</td>
-          </tr>
-          <tr>
-            <td>Junior engineer</td>
-            <td class="num">₹20 lakh</td>
-            <td class="num">₹20 lakh</td>
-            <td class="what">₹10 lakh per year × 2 years</td>
+            <td class="what">Register, access, dashboards, L&amp;D, consent, parent notices, teacher routine, Kolibri link</td>
           </tr>
           <tr>
             <td>Later build — phases 4 and 5</td>
-            <td class="num">₹12 lakh</td>
             <td class="num">₹12 lakh</td>
             <td class="what">Class-photo attendance after consent; Head Office tools still architect-led</td>
           </tr>
           <tr>
             <td>India hosting and security</td>
-            <td class="num">₹10 lakh</td>
-            <td class="num">₹10 lakh</td>
+            <td class="num">₹5 lakh</td>
             <td class="what">Database, backups, monitoring for 2 years; India-based hosting preferred</td>
           </tr>
         </tbody>
         <tfoot>
           <tr>
-            <td>Total</td>
-            <td class="num">₹92 lakh</td>
-            <td class="num">₹62 lakh</td>
+            <td>This ask</td>
+            <td class="num">₹37 lakh</td>
             <td></td>
           </tr>
         </tfoot>
       </table>
 
-      <p class="note">The seven reasons on the previous page sit in the in-house core build. The grant covers the discounted design and build, one junior engineer, later-phase specialist help, and two years of hosting.</p>
+      <p class="note">The table is the ₹37 lakh ask: the portion not absorbed in-house, plus later-phase specialist help and two years of hosting. Full cost ₹67 lakh. ₹30 lakh absorbed by the in-house team. The resulting software is open source and available for other nonprofits to deploy.</p>
     </div>
   </article>
 </body>

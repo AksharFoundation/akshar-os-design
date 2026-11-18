@@ -40,7 +40,11 @@ Akshar staff need 20 hours of training a year. Materials, registers, pre-work, p
 
 Six data sets — students, assessments, attendance, recycling, peer learning, and points — are entered by district teams and merged by hand. That is slow, easy to get wrong, and invisible until the merge is done. An app gives each role a filtered dashboard (school, district, gender) from the same source, so Head Office does not become the database.
 
-Those seven problems are one problem: **the model is shared; the system is not.** Paper and Drive cannot fix that. An app can.
+### 8. Open source, not Akshar-only
+
+The app will be released as open source software. Any other nonprofit can deploy and use it at no licence cost. The code is not restricted to Akshar.
+
+Those seven operational problems are one problem: **the model is shared; the system is not.** Paper and Drive cannot fix that. An app can — and because it is open source, other organisations can run the same system themselves.
 
 ---
 
